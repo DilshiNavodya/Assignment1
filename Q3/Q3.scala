@@ -2,10 +2,10 @@ object book extends App {
   def cost(copies: Int) : Double =  {
     var cost: Double =0;
     if(copies>50){
-      cost=(copies-50)*0.75+(50*3)+(24.95*copies*60/100);
+      cost=(copies-50)*0.75+3+(24.95*copies*60/100);
     }
     else{
-      cost=(copies*3)+(24.95*copies*60/100);
+      cost=3+(24.95*copies*60/100);
     }
     return cost;
   }
